@@ -1,0 +1,39 @@
+---
+output: github_document
+---
+
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# ZipcodeUS
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of ZipcodeUS is to provide data and tools for those looking for plot their address data. 
+
+
+## Example
+
+
+```{r example}
+library(ZipcodeUS)
+x <- c("1234", "Li123"," 1234")
+y <- c("800 E Summit St, Kent, OH, 44240", "900 E Summit St, Kent, OH, 23")
+get_zip(y)
+contain_letter(get_zip(y))
+clean_zip(x)
+```
+
+## Zip table
+
+```{r}
+head(zip_table)
+```
