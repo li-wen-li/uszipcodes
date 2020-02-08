@@ -1,5 +1,5 @@
 
-# ZipcodeUS
+# uszipcodes
 
 <!-- badges: start -->
 

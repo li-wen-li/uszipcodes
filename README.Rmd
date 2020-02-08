@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# ZipcodeUS
+# uszipcodes
 
 <!-- badges: start -->
 <!-- badges: end -->
