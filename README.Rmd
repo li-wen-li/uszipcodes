@@ -17,7 +17,8 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ZipcodeUS is to provide data and tools for those looking for plot their address data. 
+The goal of ZipcodeUS is to provide data and tools for those looking for plot their address data.\
+Attached functions could be used to clean zip codes before joinining with Zip table to obtain longtitudes/latitudes.
 
 
 ## Example
@@ -43,7 +44,7 @@ head(zip_table)
 
 ## Installation
 
-```{r}
+```{r eval = FALSE}
 library(devtools)
 install_github("li-wen-li/uszipcodes")
-``
+```

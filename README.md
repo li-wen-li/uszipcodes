@@ -6,7 +6,9 @@
 <!-- badges: end -->
 
 The goal of ZipcodeUS is to provide data and tools for those looking for
-plot their address data.
+plot their address data.  
+Attached functions could be used to clean zip codes before joinining
+with Zip table to obtain longtitudes/latitudes.
 
 ## Example
 
@@ -45,4 +47,11 @@ head(zip_table)
 #> 4 43.010337,-85.89754
 #> 5 41.194129,-91.98027
 #> 6 37.934311,-86.67821
+```
+
+## Installation
+
+``` r
+library(devtools)
+install_github("li-wen-li/uszipcodes")
 ```
