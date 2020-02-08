@@ -12,16 +12,19 @@ plot their address data.
 
 ``` r
 library(ZipcodeUS)
-x <- c("1234", "Li123"," 1234")
 y <- c("800 E Summit St, Kent, OH, 44240", "900 E Summit St, Kent, OH, 23")
 get_zip(y)
 #> [1] "44240" "H, 23"
 contain_letter(get_zip(y))
 #> 44240 H, 23 
 #> FALSE  TRUE
+```
+
+``` r
+x <- c("1234", "Li123"," 1234", "  123")
 clean_zip(x)
-#>    1234   Li123    1234 
-#> "01234"    "NA" "01234"
+#>    1234   Li123    1234     123 
+#> "01234"    "NA" "01234" "00123"
 ```
 
 ## Zip table

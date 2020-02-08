@@ -1,4 +1,4 @@
-Package: ZipcodeUS
+Package: uszipcodes
 Type: Package
 Title: US Zip Code (with long/lat)
 Version: 0.1.0
