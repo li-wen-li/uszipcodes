@@ -4,7 +4,7 @@ Title: US Zip Code (with long/lat)
 Version: 0.1.0
 Author: Liwen Li
 Maintainer: Liwen Li <lli15@kent.edu>
-Description: This package contains zip code with its City, State, Latitude, Longitude, Timezone, Daylight savings time flag and geopoint. You can also find three functions, get_zip(), contain_letter(), clean_zip(). If you have zip codes included within street adress data, use get_zip() to extract zip codes. Use contain_letter() to check if your zip code data includes letters due to data entry error. Use clean_zip() to change those containing zip codes containing letters to NA value, also use this function to add "0" to those places with 3/4 digit zip codes.
+Description: This package contains zip code with its City, State, Latitude, Longitude, Timezone, Daylight savings time flag and geopoint./n You can also find three functions, get_zip(), contain_letter(), clean_zip(). /n If you have zip codes included within street adress data, use get_zip() to extract zip codes. /n Use contain_letter() to check if your zip code data includes letters due to data entry error. /n Use clean_zip() to change those containing zip codes containing letters to NA value, also use this function to add "0" to those places with 3/4 digit zip codes.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
