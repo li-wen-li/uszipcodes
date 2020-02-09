@@ -31,7 +31,7 @@ contain_letter <- function(x) {sapply(x, function(y){
 #'@export
 
 clean_zip <- function(x){
-  x <- ifelse(contain_letter(x), "NA",
+  x <- ifelse(contain_letter(x), NA,
               ifelse(stringr::str_detect(x, ", "), stringr::str_replace(x, ", ", "00"),
                   ifelse(stringr::str_detect(x, "  "), stringr::str_replace(x, "  ", "00"),
                      ifelse(stringr::str_detect(x, " "), stringr::str_replace(x," ", "0"), stringr::str_pad(x, width = 5, pad = "0"))
