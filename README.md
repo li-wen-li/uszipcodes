@@ -13,12 +13,13 @@ with Zip table to obtain longtitudes/latitudes.
 ## Example
 
 ``` r
-library(ZipcodeUS)
-y <- c("800 E Summit St, Kent, OH, 44240", "900 E Summit St, Kent, OH, 23")
+library(uszipcodes)
+#> Loading required package: stringr
+y <- c("1234 100th Street, New York, NY, 10001", "5678 100th Street, New York, NY, 23")
 get_zip(y)
-#> [1] "44240" "H, 23"
+#> [1] "10001" "Y, 23"
 contain_letter(get_zip(y))
-#> 44240 H, 23 
+#> 10001 Y, 23 
 #> FALSE  TRUE
 ```
 
@@ -26,7 +27,7 @@ contain_letter(get_zip(y))
 x <- c("1234", "Li123"," 1234", "  123")
 clean_zip(x)
 #>    1234   Li123    1234     123 
-#> "01234"    "NA" "01234" "00123"
+#> "01234"      NA "01234" "00123"
 ```
 
 ## Zip table

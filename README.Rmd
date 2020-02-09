@@ -25,8 +25,8 @@ Attached functions could be used to clean zip codes before joinining with Zip ta
 
 
 ```{r example}
-library(ZipcodeUS)
-y <- c("800 E Summit St, Kent, OH, 44240", "900 E Summit St, Kent, OH, 23")
+library(uszipcodes)
+y <- c("1234 100th Street, New York, NY, 10001", "5678 100th Street, New York, NY, 23")
 get_zip(y)
 contain_letter(get_zip(y))
 ```
